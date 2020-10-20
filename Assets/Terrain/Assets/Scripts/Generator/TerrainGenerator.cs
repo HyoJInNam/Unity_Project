@@ -8,15 +8,12 @@ public class TerrainGenerator : MonoBehaviour {
     const float sqrViewerMoveThresholdForChunkUpdate = viewerMoveThresholdForChunkUpdate * viewerMoveThresholdForChunkUpdate;
 
 
-    public int colliderLODIndex;
-    public LODInfo[] detailLevels;
-
     public MeshSettings meshSettings;
     public HeightMapSettings heightMapSettings;
     public TextureData textureSettings;
 
-    public Transform viewer;
     public Material mapMaterial;
+    public Transform viewer;
 
     Vector2 viewerPosition;
     Vector2 viewerPositionOld;
@@ -26,6 +23,11 @@ public class TerrainGenerator : MonoBehaviour {
 
     Dictionary<Vector2, TerrainChunk> terrainChunkDictionary = new Dictionary<Vector2, TerrainChunk>();
     List<TerrainChunk> visibleTerrainChunks = new List<TerrainChunk>();
+
+    [Header("Level of Detail")]
+    public int colliderLODIndex;
+    public LODInfo[] detailLevels;
+
 
     void Start()
     {
