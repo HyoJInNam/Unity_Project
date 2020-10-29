@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a2727d850f9894899b86c8f7e9819a, type: 3}
+  m_Name: new Objects
+  m_EditorClassIdentifier: 
+  autoUpdate: 1
+  obj:
+    name: grass
+    gameObejct: {fileID: 3207978319528606027, guid: 674202f678c625f4ca129494d5d049e5,
+      type: 3}
+    localScale: {x: 1, y: 1, z: 1}
+    minHeight: 0
+    maxHeight: 0

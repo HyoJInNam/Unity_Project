@@ -11,6 +11,7 @@ public class TerrainGenerator : MonoBehaviour {
     public MeshSettings meshSettings;
     public HeightMapSettings heightMapSettings;
     public TextureData textureSettings;
+    public ObjectsData objectsSettings;
 
     public Material mapMaterial;
     public Transform viewer;
@@ -87,6 +88,7 @@ public class TerrainGenerator : MonoBehaviour {
                         terrainChunkDictionary.Add(viewedChunkCoord, newChunk);
                         newChunk.onVisibilityChanged += OnTerrainChunkVisibilityChanged;
                         newChunk.Load();
+
                     }
                 }
             }

@@ -10,17 +10,19 @@ public class MapPreview : MonoBehaviour
     public MeshRenderer meshRenderer;
 
 
-    public enum DrawMode { NoiseMap, Mesh, FalloffMap };
+    public enum DrawMode { NoiseMap, Mesh, FalloffMap};
     public DrawMode drawMode;
 
     public MeshSettings meshSettings;
     public HeightMapSettings heightMapSettings;
     public TextureData textureData;
+    public ObjectsData objectsData;
 
     public Material terrainMaterial;
 
     [Range(0, MeshSettings.numSupportedLODs - 1)]
     public int editorPreviewLOD;
+    public bool createObjects;
     public bool autoUpdate;
 
     float[,] falloffMap;
@@ -43,16 +45,18 @@ public class MapPreview : MonoBehaviour
         {
             DrawTexture(TextureGenerator.TextureFromHeightMap(new HeightMap(FalloffGenerator.GenerateFalloffMap(meshSettings.numVertsPerLine), 0, 1)));
         }
-    }
 
+        if(createObjects) ObjectsGenerator.CreateObjects(heightMapSettings.heightMultiplier, heightMap.values, meshSettings, editorPreviewLOD, objectsData, transform.Find("Preview Mesh"));
+        ObjectsGenerator.GenerateObjects(heightMapSettings.heightMultiplier, heightMap.values, meshSettings, editorPreviewLOD, objectsData);
+    }
 
     public void DrawTexture(Texture2D texture)
     {
         textureRender.sharedMaterial.mainTexture = texture;
         textureRender.transform.localScale = new Vector3(texture.width, 1, texture.height) / 10f;
 
-        textureRender.gameObject.SetActive(true);
-        meshFilter.gameObject.SetActive(false);
+        textureRender.gameObject.SetActive(false);
+        meshFilter.gameObject.SetActive(true);
     }
 
     public void DrawMesh(MeshData meshData)
@@ -91,6 +95,10 @@ public class MapPreview : MonoBehaviour
             textureData.OnValuesUpdated -= OnTextureValuesUpdated;
             textureData.OnValuesUpdated += OnTextureValuesUpdated;
         }
-    }
 
+        if (objectsData != null) {
+            objectsData.OnValuesUpdated -= OnTextureValuesUpdated;
+            objectsData.OnValuesUpdated += OnTextureValuesUpdated;
+        }
+    }
 }

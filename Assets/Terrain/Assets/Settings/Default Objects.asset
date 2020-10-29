@@ -9,11 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4fa2c52cc2cb6d4180642b47f9719ff, type: 3}
-  m_Name: New Mesh Settings
+  m_Script: {fileID: 11500000, guid: 14a2727d850f9894899b86c8f7e9819a, type: 3}
+  m_Name: Default Objects
   m_EditorClassIdentifier: 
   autoUpdate: 1
-  meshScale: 5
-  useFlatShading: 0
-  chunkSizeIndex: 3
-  flatshadedChunkSizeIndex: 0
+  obj:
+    name: grass
+    gameObejct: {fileID: 3207978319528606027, guid: 674202f678c625f4ca129494d5d049e5,
+      type: 3}
+    localScale: {x: 1, y: 1, z: 1}
+    minHeight: 0
+    maxHeight: 0

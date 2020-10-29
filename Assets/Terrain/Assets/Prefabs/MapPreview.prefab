@@ -144,8 +144,10 @@ MonoBehaviour:
   meshSettings: {fileID: 11400000, guid: 07019e292e87c3840bfd5766c5edb0ee, type: 2}
   heightMapSettings: {fileID: 11400000, guid: 95488b7a0ef302342af0b1ac69a06a66, type: 2}
   textureData: {fileID: 11400000, guid: 9ad6e7df956ce104da351e224f90592a, type: 2}
+  objectsData: {fileID: 0}
   terrainMaterial: {fileID: 2100000, guid: 16b1151c52d2eee4683ea0385c57cbd2, type: 2}
   editorPreviewLOD: 0
+  createObjects: 0
   autoUpdate: 1
 --- !u!1 &1330154262033108794
 GameObject:
