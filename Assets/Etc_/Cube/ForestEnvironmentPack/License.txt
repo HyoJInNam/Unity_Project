@@ -1,0 +1,26 @@
+*************************** Unity Asset ****************************
+************* Low poly Forest environment package *************
+
+Pack contain low poly models of forest environment.
+With this package you can create beautiful and simple environments for PC and mobile games.
+
+Content
+- 45 ready to use prefabs
+- 45 fbx meshes (in total 6 364tris)
+- One 256 x 256 texture atlas for all models (except cloud)
+- Demo scene with light setting and post processing for inspiration
+- Showcase scene
+- Smoke particle system included
+
+----------------------------------------------------------------------
+Total file size: 736.1 KB
+Number of files: 104
+
+Version 1.0（current）
+release: 2020년 7월 8일
+First release: 2020년 7월 8일
+
+NAME:: Low poly Forest environment package
+ID:: Free Dimension Forge
+File:: Forest Environment Pack
+Free Dimension Forge - Low Poly Environments Pack - Art - Forest Environment Pack

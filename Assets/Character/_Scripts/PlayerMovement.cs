@@ -37,6 +37,6 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetFloat("speed", speed);
         animator.SetFloat("velocityX", veloctity.x);
-        animator.SetFloat("velocityZ", veloctity.y);
+        animator.SetFloat("velocityZ", veloctity.z);
     }
 }
