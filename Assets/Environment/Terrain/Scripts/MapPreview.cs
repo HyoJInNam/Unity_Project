@@ -9,15 +9,16 @@ public class MapPreview : MonoBehaviour
     public MeshFilter meshFilter;
     public MeshRenderer meshRenderer;
 
-    public enum DrawMode { NoiseMap, Mesh, FalloffMap};
+
+    public enum DrawMode { NoiseMap, Mesh, FalloffMap };
     public DrawMode drawMode;
 
     public MeshSettings meshSettings;
     public HeightMapSettings heightMapSettings;
     public TextureData textureData;
 
-    public Material[] material;
-    private Material terrainMaterial;
+    public Material terrainMaterial;
+    public Material grassMaterial;
 
     [Range(0, MeshSettings.numSupportedLODs - 1)]
     public int editorPreviewLOD;
@@ -27,7 +28,8 @@ public class MapPreview : MonoBehaviour
 
     public void DrawMapInEditor()
     {
-        ApplyToMaterial();
+        textureData.ApplyToTerrainMaterial(terrainMaterial);
+        textureData.UpdateMeshHeights(terrainMaterial, heightMapSettings.minHeight, heightMapSettings.maxHeight);
         HeightMap heightMap = HeightMapGenerator.GenerateHeightMap(meshSettings.numVertsPerLine, meshSettings.numVertsPerLine, heightMapSettings, Vector2.zero);
 
         if (drawMode == DrawMode.NoiseMap)
@@ -43,26 +45,20 @@ public class MapPreview : MonoBehaviour
             DrawTexture(TextureGenerator.TextureFromHeightMap(new HeightMap(FalloffGenerator.GenerateFalloffMap(meshSettings.numVertsPerLine), 0, 1)));
         }
     }
-    public void ApplyToMaterial()
-    {
-        meshRenderer.materials = material;
-        terrainMaterial = material[0];
-        textureData.ApplyToTerrainMaterial(terrainMaterial);
-        textureData.UpdateMeshHeights(terrainMaterial, heightMapSettings.minHeight, heightMapSettings.maxHeight);
-        textureData.ApplyToGrassMaterial(material[1]);
-    }
+
 
     public void DrawTexture(Texture2D texture)
     {
         textureRender.sharedMaterial.mainTexture = texture;
         textureRender.transform.localScale = new Vector3(texture.width, 1, texture.height) / 10f;
 
-        textureRender.gameObject.SetActive(false);
-        meshFilter.gameObject.SetActive(true);
+        textureRender.gameObject.SetActive(true);
+        meshFilter.gameObject.SetActive(false);
     }
 
     public void DrawMesh(MeshData meshData)
     {
+        textureData.ApplyToGrassMaterial(grassMaterial);
         meshFilter.sharedMesh = meshData.CreateMesh();
 
         textureRender.gameObject.SetActive(false);
@@ -98,4 +94,5 @@ public class MapPreview : MonoBehaviour
             textureData.OnValuesUpdated += OnTextureValuesUpdated;
         }
     }
+
 }

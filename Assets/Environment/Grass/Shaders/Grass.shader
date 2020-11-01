@@ -194,10 +194,13 @@ Shader "Roystan/Grass"
         {
 			Tags
 			{
-				"RenderType" = "Opaque"
+				"Queue" = "AlphaTest"
+				"RenderType" = "TransparentCutout"
+				"IgnoreProjector" = "True"
 				"LightMode" = "ForwardBase"
 			}
 
+			AlphaToMask On
             CGPROGRAM
             #pragma vertex vert
 			#pragma geometry geo
@@ -206,7 +209,7 @@ Shader "Roystan/Grass"
 			#pragma domain domain
 			#pragma target 4.6
 			#pragma multi_compile_fwdbase
-            
+			
 			#include "Lighting.cginc"
 
 			float4 _TopColor;
@@ -228,29 +231,5 @@ Shader "Roystan/Grass"
             }
             ENDCG
         }
-
-		Pass
-		{
-			Tags
-			{
-				"LightMode" = "ShadowCaster"
-			}
-
-			CGPROGRAM
-			#pragma vertex vert
-			#pragma geometry geo
-			#pragma fragment frag
-			#pragma hull hull
-			#pragma domain domain
-			#pragma target 4.6
-			#pragma multi_compile_shadowcaster
-
-			float4 frag(geometryOutput i) : SV_Target
-			{
-				SHADOW_CASTER_FRAGMENT(i)
-			}
-
-			ENDCG
-		}
     }
 }

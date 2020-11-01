@@ -134,15 +134,6 @@ public class MeshData {
 
     bool useFlatShading;
 
-    public float[] GetHeight() {
-        float[] height = new float[vertices.Length];
-        for (int i = 0; i < vertices.Length; i++) {
-            height[i] = vertices[i].y;
-        }
-        return height;
-    }
-    public Vector3[] GetVertices() { return vertices; }
-
     public MeshData(int numVertsPerLine, int skipIncrement, bool useFlatShading)
     {
         this.useFlatShading = useFlatShading;

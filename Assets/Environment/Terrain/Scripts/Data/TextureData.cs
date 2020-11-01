@@ -8,8 +8,8 @@ public class TextureData : UpdatableData
     const int textureSize = 512;
     const TextureFormat textureFormat = TextureFormat.RGB565;
 
-    public int grassIdx = 2;
     public Layer[] layers;
+    public int grassIdx = 2;
 
     float savedMinHeight;
     float savedMaxHeight;

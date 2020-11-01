@@ -12,7 +12,9 @@ public class TerrainGenerator : MonoBehaviour {
     public HeightMapSettings heightMapSettings;
     public TextureData textureSettings;
 
-    public Material[] mapMaterial;
+    private Material[] materials = new Material[2];
+    public Material mapMaterial;
+    public Material grassMaterial;
     public Transform viewer;
 
     Vector2 viewerPosition;
@@ -31,9 +33,11 @@ public class TerrainGenerator : MonoBehaviour {
 
     void Start()
     {
-        textureSettings.ApplyToTerrainMaterial(mapMaterial[0]);
-        textureSettings.UpdateMeshHeights(mapMaterial[0], heightMapSettings.minHeight, heightMapSettings.maxHeight);
-        textureSettings.ApplyToGrassMaterial(mapMaterial[1]);
+        materials[0] = mapMaterial;
+        materials[1] = grassMaterial;
+        textureSettings.ApplyToTerrainMaterial(mapMaterial);
+        textureSettings.UpdateMeshHeights(mapMaterial, heightMapSettings.minHeight, heightMapSettings.maxHeight);
+        textureSettings.ApplyToGrassMaterial(grassMaterial);
 
         float maxViewDst = detailLevels[detailLevels.Length - 1].visibleDstThreshold;
         meshWorldSize = meshSettings.meshWorldSize;
@@ -84,11 +88,10 @@ public class TerrainGenerator : MonoBehaviour {
                     }
                     else
                     {
-                        TerrainChunk newChunk = new TerrainChunk(viewedChunkCoord, heightMapSettings, meshSettings, detailLevels, colliderLODIndex, transform, viewer, mapMaterial);
+                        TerrainChunk newChunk = new TerrainChunk(viewedChunkCoord, heightMapSettings, meshSettings, detailLevels, colliderLODIndex, transform, viewer, ref materials);
                         terrainChunkDictionary.Add(viewedChunkCoord, newChunk);
                         newChunk.onVisibilityChanged += OnTerrainChunkVisibilityChanged;
                         newChunk.Load();
-
                     }
                 }
             }
