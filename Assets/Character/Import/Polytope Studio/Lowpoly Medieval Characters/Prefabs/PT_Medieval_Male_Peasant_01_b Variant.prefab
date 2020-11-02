@@ -30,33 +30,6 @@ CapsuleCollider:
   m_Height: 1.8137331
   m_Direction: 1
   m_Center: {x: -0.005249575, y: 0.87933207, z: -0.009577632}
---- !u!114 &29106867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4060153164066334473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d770703eed017040ad8b813938540b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followCamera: {fileID: 0}
-  walk: 3
-  run: 7
---- !u!114 &29106869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4060153164066334473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e305e837aa7450419b3b2e1b9374144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4478148339650450061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,7 +105,7 @@ PrefabInstance:
     - target: {fileID: 467560700253107588, guid: 5c296df26581026428736e7a7c297dc2,
         type: 3}
       propertyPath: m_Name
-      value: PT_Medieval_Male_Peasant_01_b
+      value: PT_Medieval_Male_Peasant_01_b Variant
       objectReference: {fileID: 0}
     - target: {fileID: 467560700253107588, guid: 5c296df26581026428736e7a7c297dc2,
         type: 3}
