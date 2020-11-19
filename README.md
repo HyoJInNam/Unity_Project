@@ -27,7 +27,7 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 | 변수 | 설명 |
 | :--------: | :------ |
 | Height Multiplier | 높이에 곱하는 수  |
-| Height Curve | 0과 1의 사이에 대한 높이 값 | ![terrain01](./readme/terrain/04.png)
+| Height Curve | 0과 1의 사이에 대한 높이 값 ![terrain01](./readme/terrain/04.png) | 
 
 
 3. 삼각형의 표면을 가지는 mesh 생성한다.
@@ -46,8 +46,7 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 6.	대기열에 항목이 있을 때마다 콜백을 호출해 지도 데이터를 전달하는 방식이다.
 <img src = "./readme/terrain/08.png" width="50%">
 콜백을 호출해야 하는 이유는 Map data와 Mesh data계산을 처리하는 동안 게임이 멈출 수 있기 때문이다. 
-<img src = "./readme/terrain/09.png" width="50%">
-<img src = "./readme/terrain/10.png" width="50%">
+<img src = "./readme/terrain/09.png" width="50%"> <img src = "./readme/terrain/10.png" width="50%">
 
 ## shader
 [![Tutorial Demo](https://img.youtube.com/vi/3dsQ8QNqF7E/sddefault.jpg)](https://youtu.be/3dsQ8QNqF7E)
