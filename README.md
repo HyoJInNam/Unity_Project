@@ -10,7 +10,7 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 [![Tutorial Demo](https://img.youtube.com/vi/foPcw3q9s14/sddefault.jpg)](https://youtu.be/foPcw3q9s14)
 
 1. 하나의 Perlin Noise를 사용하면 평평하기 때문에 여러 개의 Perline Noise 생성한다.
-![terrain01](./readme/terrain/01.png=x100)
+![terrain01](./readme/terrain/01.png =300x)
 
 | 변수 | 설명 |
 | :--------: | :------: |
@@ -19,7 +19,7 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 | Persistance | Octave의 진폭 감소값 |
 
 각각의 Octave 들의 빈도와 진폭을 조절해 알맞은 Octave를 만들어 합친다.
-![terrain01](./readme/terrain/03.png=500x)
+![terrain01](./readme/terrain/03.png)
 
 2. 노이즈 맵의 값을 이용해Height Curve의 높이 값을 추출하여 높이 값을 구한다.
 높이 = 추출한 Height Curve 높이 값 * 높이에 곱하는 수 
