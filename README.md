@@ -40,7 +40,7 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 생성된 terrain 사이가 Lod 설정으로 인해 틈이 벌어진다.  
 terrain 끝(edge)를 간격을 두지 않고 mesh를 생성하여 이어준다.  
 <img src = "./readme/terrain/06.png" width="60%">
-<img src = "./readme/terrain/07.png" width="30%">
+<img src = "./readme/terrain/07.png" width="32%">
 
 5. 플레이어 위치를 중심으로 일정거리 안의 Terrain Object은 활성화한다. (없으면 생성한다.)
 플레이어가 있는 Terrain에서 멀리 떨어져 있는 Terrain Object는 비활성화한다.
@@ -53,7 +53,7 @@ terrain 끝(edge)를 간격을 두지 않고 mesh를 생성하여 이어준다.
 3.	대기열에 항목이 있을 때마다 콜백을 호출해 지도 데이터를 전한다.  
 
 ### 콜백을 통해서 최적화가 된 결과 화면  
-<img src = "./readme/terrain/09.png" width="45%"> <img src = "./readme/terrain/10.png" width="45%">
+<img src = "./readme/terrain/09.png" width="45%"> <img src = "./readme/terrain/10.png" width="45.2%">
 -	Viewer(camera)가 움직였을 때, 새로운 Terrain을 생성하고, 이미 있는 Terrain 이면 활성화 시킴.
 -	Viewer(camera)를 마구자비로 움직였을 때 프레임이 높지 않는 모습을 확인. 
 
