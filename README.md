@@ -33,12 +33,14 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 3. 삼각형의 표면을 가지는 mesh 생성한다.
 
 4. Level of detail 설정에 따라 mesh 생성시 필요한 정점들의 간격을 둔다. 
-<img src = "./readme/terrain/05.png" width="50%">
-
 플레이어와 떨어진 거리에 있는 Terrain의 위치에 따라 설정한 임의의 간격을 두고 mesh를 생성한다.
 플레이어와 가까이 있으면 간격을 적게 두고 mesh를 생성하고, 있으면 간격을 멀리 두고 mesh를 생성한다
+<img src = "./readme/terrain/05.png" width="70%">
+
+생성된 terrain 사이가 Lod 설정으로 인해 틈이 벌어진다.
+terrain 끝(edge)를 간격을 두지 않고 mesh를 생성하여 이어준다.
 <img src = "./readme/terrain/06.png" width="50%">
-<img src = "./readme/terrain/07.png" width="50%">\
+<img src = "./readme/terrain/07.png" width="50%">
 
 5. 플레이어 위치를 중심으로 일정거리 안의 Terrain Object은 활성화한다. (없으면 생성한다.)
 플레이어가 있는 Terrain에서 멀리 떨어져 있는 Terrain Object는 비활성화한다.
