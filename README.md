@@ -1,2 +1,2 @@
 # Unity_Project
-[![Watch the video](https://i.ytimg.com/vi/1BVbqHLKkmM/0.png)](https://youtu.be/1BVbqHLKkmM)
+[![Tutorial Demo](https://img.youtube.com/vi/1BVbqHLKkmM/default.jpg)](https://youtu.be/1BVbqHLKkmM)
