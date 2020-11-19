@@ -3,7 +3,8 @@
 ## Tutorial Demo
 [![Tutorial Demo](https://img.youtube.com/vi/1BVbqHLKkmM/maxresdefault.jpg)](https://youtu.be/1BVbqHLKkmM)
 
-
+## shader
+[![Tutorial Demo](https://img.youtube.com/vi/3dsQ8QNqF7E/sddefault.jpg)](https://youtu.be/3dsQ8QNqF7E)
 
 ## terrain
 #### Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 Mesh 생성.  
@@ -52,7 +53,3 @@
 -	Viewer(camera)가 움직였을 때, 새로운 Terrain을 생성하고, 이미 있는 Terrain 이면 활성화 시킴.
 -	Viewer(camera)를 마구자비로 움직였을 때 프레임이 높지 않는 모습을 확인. 
 
-
-
-## shader
-[![Tutorial Demo](https://img.youtube.com/vi/3dsQ8QNqF7E/sddefault.jpg)](https://youtu.be/3dsQ8QNqF7E)
