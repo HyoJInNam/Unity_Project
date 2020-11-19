@@ -23,10 +23,12 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 
 2. 노이즈 맵의 값을 이용해Height Curve의 높이 값을 추출하여 높이 값을 구한다.
 높이 = 추출한 Height Curve 높이 값 * 높이에 곱하는 수 
+
 | 변수 | 설명 |
 | :--------: | :------: |
-| Height Curve | 0과 1의 사이에 대한 높이 값 ![terrain01](./readme/terrain/04.png)  |
 | Height Multiplier | 높이에 곱하는 수  |
+| Height Curve | 0과 1의 사이에 대한 높이 값|
+![terrain01](./readme/terrain/04.png)
 
 3. 삼각형의 표면을 가지는 mesh 생성한다.
 
