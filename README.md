@@ -6,7 +6,7 @@
 
 
 ## terrain
-Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 Mesh 생성.
+Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 Mesh 생성.  
 [![Tutorial Demo](https://img.youtube.com/vi/foPcw3q9s14/sddefault.jpg)](https://youtu.be/foPcw3q9s14)
 
 1. 하나의 Perlin Noise를 사용하면 평평하기 때문에 여러 개의 Perline Noise 생성한다.  
@@ -51,7 +51,7 @@ terrain 끝(edge)를 간격을 두지 않고 mesh를 생성하여 이어준다.
 2.	Height Map, Terrain Mesh, Terrain Mesh Conlider 생성 계산 및 활성화 후 데이터를 받는다.
 3.	대기열에 항목이 있을 때마다 콜백을 호출해 지도 데이터를 전한다.
 
-콜백을 통해서 최적화가 된 결과 화면
+콜백을 통해서 최적화가 된 결과 화면  
 <img src = "./readme/terrain/09.png" width="40%"> <img src = "./readme/terrain/10.png" width="40%">
 -	Viewer(camera)가 움직였을 때, 새로운 Terrain을 생성하고, 이미 있는 Terrain 이면 활성화 시킴.
 -	Viewer(camera)를 마구자비로 움직였을 때 프레임이 높지 않는 모습을 확인. 
