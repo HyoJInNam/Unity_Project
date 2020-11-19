@@ -11,6 +11,7 @@
 Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 Mesh 생성.
 
 | 변수 | 설명 |
+| :--------: | :------ |
 | Octave | Perline Noise를 생성할 갯수 |
 | Lacunarity | Octave의 빈도 증가값 |
 | Persistance | Octave의 진폭 감소값 |
