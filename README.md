@@ -10,14 +10,14 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 [![Tutorial Demo](https://img.youtube.com/vi/foPcw3q9s14/sddefault.jpg)](https://youtu.be/foPcw3q9s14)
 
 1. 하나의 Perlin Noise를 사용하면 평평하기 때문에 여러 개의 Perline Noise 생성한다.  
-<img src = "./readme/terrain/01.png" width="50%">
 
 | 변수 | 설명 |
 | :--------: | :------: |
 | Octave | Perline Noise를 생성할 갯수 |
 | Lacunarity | Octave의 빈도 증가값 |
-| Persistance | Octave의 진폭 감소값 |
+| Persistance | Octave의 진폭 감소값 |  
 
+<img src = "./readme/terrain/01.png" width="50%">
 각각의 Octave 들의 빈도와 진폭을 조절해 알맞은 Octave를 만들어 합친다.
 <img src = "./readme/terrain/03.png" width="50%">
 
@@ -27,7 +27,7 @@ Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 
 | 변수 | 설명 |
 | :--------: | :------ |
 | Height Multiplier | 높이에 곱하는 수  |
-| Height Curve | 0과 1의 사이에 대한 높이 값  ![terrain01](./readme/terrain/04.png) |
+| Height Curve | 0과 1의 사이에 대한 높이 값 | ![terrain01](./readme/terrain/04.png)
 
 
 3. 삼각형의 표면을 가지는 mesh 생성한다.
