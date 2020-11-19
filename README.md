@@ -10,3 +10,7 @@ terrain
 
 shader
 [![Tutorial Demo](https://img.youtube.com/vi/3dsQ8QNqF7E/sddefault.jpg)](https://youtu.be/3dsQ8QNqF7E)
+[![Tutorial Demo](https://img.youtube.com/vi/3dsQ8QNqF7E/0.jpg)](https://youtu.be/3dsQ8QNqF7E)
+[![Tutorial Demo](https://img.youtube.com/vi/3dsQ8QNqF7E/1.jpg)](https://youtu.be/3dsQ8QNqF7E)
+[![Tutorial Demo](https://img.youtube.com/vi/3dsQ8QNqF7E/2.jpg)](https://youtu.be/3dsQ8QNqF7E)
+[![Tutorial Demo](https://img.youtube.com/vi/3dsQ8QNqF7E/3.jpg)](https://youtu.be/3dsQ8QNqF7E)
