@@ -13,15 +13,11 @@
 
 1. 하나의 Perlin Noise를 사용하면 평평하기 때문에 여러 개의 Perline Noise 생성한다.  
 각각의 Octave 들의 빈도와 진폭을 조절해 알맞은 Octave를 만들어 합친다.
-<img src = "./readme/terrain/03.png" width="50%">  
-| 변수 | 설명 |
-| :--------: | :------: |
-| Octave | Perline Noise를 생성할 갯수 |
-| Lacunarity | Octave의 빈도 증가값 |
-| Persistance | Octave의 진폭 감소값 |  
+<img src = "./readme/terrain/03.png" width="50%">   
 
 2. 노이즈 맵의 값을 이용해Height Curve의 높이 값을 추출하여 높이 값을 구한다.  
 높이 = 추출한 Height Curve 높이 값 * 높이에 곱하는 수  
+
 | 변수 | 설명 |
 | :--------: | :------ |
 | Height Multiplier | 높이에 곱하는 수  |
@@ -44,7 +40,9 @@
 
 6.	대기열에 항목이 있을 때마다 콜백을 호출해 지도 데이터를 전달하는 방식이다.  
 콜백을 호출해야 하는 이유는 Map data와 Mesh data계산을 처리하는 동안 게임이 멈출 수 있기 때문이다.  
+
 <img src = "./readme/terrain/08.png" width="70%">
+
 -	지도 데이터를 요청할 때, 콜백를 이용해 클래스를 변수로 전달한다.   
 -	Height Map, Terrain Mesh, Terrain Mesh Conlider 생성 계산 및 활성화 후 데이터를 받는다.   
 -	대기열에 항목이 있을 때마다 콜백을 호출해 지도 데이터를 전한다.  
