@@ -1,9 +1,9 @@
 # Unity_Project
 
 :blush: **Youtube** :blush: *https://youtu.be/1BVbqHLKkmM*  
-###### ***Click on the image to view the video.***
 
-## Tutorial Demo
+### Tutorial Demo
+###### ***▽ Click on the image to view the video.***  
 [![Tutorial Demo Video](https://img.youtube.com/vi/1BVbqHLKkmM/maxresdefault.jpg)](https://youtu.be/1BVbqHLKkmM)
 
 :+1: **Unity Assets** :+1:   
@@ -13,15 +13,16 @@ https://assetstore.unity.com/publishers/35725
 
 
 ------  
-## Shader
+### Shader
+###### ***▽ Click on the image to view the video.***  
 [![shader Demo Video](https://img.youtube.com/vi/3dsQ8QNqF7E/sddefault.jpg)](https://youtu.be/3dsQ8QNqF7E)
 
 ------  
-## Terrain
+### Terrain
+###### ***▽ Click on the image to view the video.***  
 [![terrain Demo Video](https://img.youtube.com/vi/foPcw3q9s14/sddefault.jpg)](https://youtu.be/foPcw3q9s14)  
-#### Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 Mesh 생성.  
 
- 
+#### Perlin Noise를 사용해 Height map 생성 이후 Color 및 Texture 작업 후 Mesh 생성.  
 ###### 1. 하나의 Perlin Noise를 사용하면 평평하기 때문에 여러 개의 Noise 생성후 빈도와 진폭을 조절해 알맞은 Octave를 만들어 합친다.
 
 <img src = "./readme/terrain/03.png" width="50%">  
@@ -38,7 +39,7 @@ https://assetstore.unity.com/publishers/35725
 
 <img src = "./readme/terrain/07.png" width="35%"> <img src = "./readme/terrain/06.png" width="63%">
 
-###### *▲ terrain의 끝(edge)을 정점들의 간격을 두지 않고 mesh를 생성하여 맞닿은 terrain을 이어준다.*  
+###### ▲ *terrain의 끝(edge)을 정점들의 간격을 두지 않고 mesh를 생성하여 맞닿은 terrain을 이어준다.*  
 
 ###### 5. 플레이어 위치를 중심으로 일정거리 안의 Terrain Object은 활성화(Terrain Object가 없으면 생성)한다. 플레이어가 있는 Terrain에서 멀리 떨어져 있는 Terrain Object는 비활성화한다.
 
@@ -52,7 +53,7 @@ https://assetstore.unity.com/publishers/35725
  
 <img src = "./readme/terrain/09.png" width="45%"> <img src = "./readme/terrain/10.png" width="46.3%">  
 
-###### *▲ 콜백을 통해서 최적화가 된 결과 화면*:  
+###### ▲ 최적화: *콜백을 통해서  fps가 33ms로 유지하는 결과 화면*   
 -	[x] Viewer(camera)가 움직였을 때, 새로운 Terrain을 생성하고, 이미 있는 Terrain 이면 활성화 시킴.
 -	[x] Viewer(camera)를 마구자비로 움직였을 때 프레임이 높지 않는 모습을 확인. 
 
