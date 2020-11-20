@@ -20,9 +20,6 @@
 [![Tutorial Demo](https://img.youtube.com/vi/foPcw3q9s14/sddefault.jpg)](https://youtu.be/foPcw3q9s14)
 
 <blink>
-  asdf
- </blink>
-
 1. 하나의 Perlin Noise를 사용하면 평평하기 때문에 여러 개의 Perline Noise 생성한다.  
 각각의 Octave 들의 빈도와 진폭을 조절해 알맞은 Octave를 만들어 합친다.
 <img src = "./readme/terrain/03.png" width="50%">   
@@ -63,4 +60,4 @@
 <img src = "./readme/terrain/09.png" width="45%"> <img src = "./readme/terrain/10.png" width="45.5%">
 -	Viewer(camera)가 움직였을 때, 새로운 Terrain을 생성하고, 이미 있는 Terrain 이면 활성화 시킴.
 -	Viewer(camera)를 마구자비로 움직였을 때 프레임이 높지 않는 모습을 확인. 
-
+</blink>
