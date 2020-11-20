@@ -36,10 +36,9 @@ https://assetstore.unity.com/publishers/35725
 - 플레이어와 가까이 있으면 정점들의 간격을 적게 두고 mesh를 생성하고, 있으면 간격을 멀리 두고 mesh를 생성한다.  
 ```  
 
-###### terrain의 끝(edge)을 정점들의 간격을 두지 않고 mesh를 생성하여 맞닿은 terrain을 이어준다.  
+<img src = "./readme/terrain/07.png" width="35%"> <img src = "./readme/terrain/06.png" width="63%">
 
-<img src = "./readme/terrain/06.png" width="70%">
-<img src = "./readme/terrain/07.png" width="30%">
+###### *▲ terrain의 끝(edge)을 정점들의 간격을 두지 않고 mesh를 생성하여 맞닿은 terrain을 이어준다.*  
 
 ###### 5. 플레이어 위치를 중심으로 일정거리 안의 Terrain Object은 활성화(Terrain Object가 없으면 생성)한다. 플레이어가 있는 Terrain에서 멀리 떨어져 있는 Terrain Object는 비활성화한다.
 
@@ -51,9 +50,9 @@ https://assetstore.unity.com/publishers/35725
 ```  
 ###### 콜백을 호출해야 하는 이유는 Map data와 Mesh data계산을 처리하는 동안 게임이 멈출 수 있기 때문이다.  
  
-<img src = "./readme/terrain/09.png" width="45%"> <img src = "./readme/terrain/10.png" width="45.5%">  
+<img src = "./readme/terrain/09.png" width="45%"> <img src = "./readme/terrain/10.png" width="46.3%">  
 
-###### *콜백을 통해서 최적화가 된 결과 화면*  
+###### *▲ 콜백을 통해서 최적화가 된 결과 화면*:  
 -	[x] Viewer(camera)가 움직였을 때, 새로운 Terrain을 생성하고, 이미 있는 Terrain 이면 활성화 시킴.
 -	[x] Viewer(camera)를 마구자비로 움직였을 때 프레임이 높지 않는 모습을 확인. 
 
