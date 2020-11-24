@@ -4,7 +4,7 @@
 
 ### Tutorial Demo
 ###### ***▽ Click on the image to view the video.***  
-[![Tutorial Demo Video](https://img.youtube.com/vi/1BVbqHLKkmM/maxresdefault.jpg)](https://youtu.be/1BVbqHLKkmM)
+[![Tutorial Demo Video](https://img.youtube.com/vi/eFsDLmhMf34/maxresdefault.jpg)](https://youtu.be/eFsDLmhMf34)
 
 :+1: **Unity Assets** :+1:   
 https://assetstore.unity.com/publishers/35251  
